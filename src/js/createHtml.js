@@ -47,6 +47,7 @@ export async function createHtml() {
     function createImg() {
       const imgPlacement = document.createElement("img");
       imgPlacement.setAttribute("src", podCasts.programs[i].socialimage);
+      //lägg in i scss istället!!!
       imgPlacement.setAttribute("width", "100");
       imgPlacement.setAttribute("height", "100");
       imgPlacement.alt = "podcast picture";

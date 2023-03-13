@@ -16,13 +16,13 @@
 98C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\source-map-js133231864510658169 1
 106C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\is-core-module\.nycrc133231864508968944 0
 148C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\resolve\test\resolver\multirepo\packages\package-a\package.json133231864516216958 0
-76C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\dist133231907337597727 1
+76C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\dist133231927960582223 1
 116C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\vite\bin\openChrome.applescript133231864508876194 0
 75C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\src133231893558701200 1
 100C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\has\LICENSE-MIT133231864508968944 0
 84C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules133231864527903563 1
 108C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\is-core-module\index.js133231864509341178 0
-81C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\README.md133231859728407877 0
+81C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\README.md133231910791541921 0
 118C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\asynckit\lib\readable_asynckit.js133231864510170452 0
 117C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\axios\lib\helpers\fromDataURI.js133231864514706812 0
 93C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\vite\bin133231864515023434 1
@@ -47,7 +47,7 @@
 85C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\src\js\api.js133231902334697103 0
 108C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\form-data\README.md.bak133231864509043644 0
 101C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\follow-redirects133231864509679397 1
-92C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\src\js\createHtml.js133231906972556565 0
+92C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\src\js\createHtml.js133231927957397813 0
 108C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\combined-stream\License133231864508978577 0
 99C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\delayed-stream133231864509544236 1
 106C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\vite\dist\node\cli.js133231864510238000 0
@@ -267,7 +267,7 @@
 116C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\axios\lib\core\transformData.js133231864515782031 0
 110C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\resolve\test\mock_sync.js133231864514706812 0
 108C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\resolve\test\module_dir133231864513537866 1
-87C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\dist\index.html133231902087064434 0
+87C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\dist\index.html133231926507006251 0
 111C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\resolve\test\module_dir.js133231864514804987 0
 119C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\resolve\test\node-modules-paths.js133231864514927815 0
 112C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\nanoid\non-secure\index.cjs133231864509679397 0
@@ -603,8 +603,8 @@
 96C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\.bin\rollup133231864520437100 0
 100C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\.bin\rollup.ps1133231864520437100 0
 94C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\node_modules\.bin\vite133231864520174021 0
-94C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\dist\index.18dbc454.js133231907337522919 0
-98C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\dist\index.18dbc454.js.map133231907337597727 0
-95C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\dist\index.c92073ef.css133231902086957436 0
-99C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\dist\index.c92073ef.css.map133231902087195332 0
+94C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\dist\index.18dbc454.js133231927960304140 0
+98C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\dist\index.18dbc454.js.map133231927960557132 0
+95C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\dist\index.c92073ef.css133231926506780576 0
+99C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\dist\index.c92073ef.css.map133231926506971131 0
 85C:\Skola\Medieinstitutet\Arbetsmetodik\inlamningsuppgift-1-PetraElgemyr\.github\.keep133231856324408940 0
