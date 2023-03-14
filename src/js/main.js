@@ -1,4 +1,3 @@
-// import './style.css';
 import { createHtml } from "./createHtml";
 import { toggleLightMode } from "./toggleDarkmode";
 
