@@ -9,8 +9,6 @@ export async function createHtml() {
   podCasts.programs.forEach((podcast) => {
     i++;
 
-    console.log(podCasts.programs[i]);
-
     const innerArticle = createInnerArticle();
 
     createImg();
