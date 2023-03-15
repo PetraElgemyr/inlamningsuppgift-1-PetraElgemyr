@@ -45,8 +45,7 @@ body {
             margin: 0;
           }
           a {
-            // color: rgba(255, 255, 255, 0.87);
-            color: black;
+            color: rgba(255, 255, 255, 0.87);
             cursor: pointer;
           }
           a :active,
@@ -62,14 +61,19 @@ body {
 .darkmode {
   background-color: antiquewhite;
   color: #242424;
+  section
+    > .section__podlist-pods
+    > .section__article-innerarticle
+    > .section__article-div
+    > a.pod__link {
+    color: #242424;
+    &:active,
+    &:hover {
+      color: rgb(85, 85, 218);
+    }
+  }
 }
-.darkmode a {
-  color: #242424;
-}
-.darkmode a:active,
-.darkmode a:hover {
-  color: rgb(85, 85, 218);
-}
+
 @media screen and (min-width: 1000px) {
   .section__podlist-pods {
     display: grid;
