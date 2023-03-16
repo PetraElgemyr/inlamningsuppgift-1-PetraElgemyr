@@ -40,6 +40,7 @@ export async function createHtml() {
     const linkText = document.createTextNode("Lyssna här");
     linkPlacement.setAttribute("href", podCasts.programs[i].programurl);
     linkPlacement.setAttribute("tabindex", "1");
+    linkPlacement.className = "pod__link";
     linkPlacement.appendChild(linkText);
     textDiv.appendChild(linkPlacement);
   });
