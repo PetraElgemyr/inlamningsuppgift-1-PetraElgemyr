@@ -20,8 +20,17 @@ body {
       text-align: center;
     }
 
-    article.section__podlist-pods {
-      .section__article-innerarticle {
+    article.section__podlist--pods {
+      @include m.laptop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @include m.laptopL {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .section__article--innerarticle {
         display: flex;
         flex-direction: row;
         margin-bottom: 2rem;
@@ -30,7 +39,7 @@ body {
           margin-top: 0.5rem;
         }
 
-        .section__article-div {
+        .section__article--div {
           display: inline-flex;
           flex-direction: column;
           margin-top: 0;
@@ -40,17 +49,20 @@ body {
             font-size: 1.25rem;
             margin: 0;
           }
+
           p {
             font-size: 1rem;
             margin: 0;
           }
+
           a {
             color: v.$darkmode-bg-color;
             cursor: pointer;
-          }
-          a :active,
-          a:hover {
-            color: rgb(85, 85, 218);
+
+            &:active,
+            &:hover {
+              color: v.$hover-link-text-color;
+            }
           }
         }
       }
@@ -62,26 +74,14 @@ body {
   background-color: v.$darkmode-bg-color;
   color: v.$darkmode-text-color;
   section
-    > .section__podlist-pods
-    > .section__article-innerarticle
-    > .section__article-div
+    > .section__podlist--pods
+    > .section__article--innerarticle
+    > .section__article--div
     > a.pod__link {
     color: v.$darkmode-text-color;
     &:active,
     &:hover {
-      color: rgb(85, 85, 218);
+      color: v.$hover-link-text-color;
     }
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .section__podlist-pods {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .section__podlist-pods {
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }

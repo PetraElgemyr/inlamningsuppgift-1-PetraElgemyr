@@ -1,1 +1,13 @@
 @use "variables" as v;
+
+@mixin laptop {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin laptopL {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
