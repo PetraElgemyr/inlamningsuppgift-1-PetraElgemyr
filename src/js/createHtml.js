@@ -1,6 +1,6 @@
 import { getPodcasts } from "./api";
 
-const podCastContainer = document.querySelector(".section__podlist-pods");
+const podCastContainer = document.querySelector(".section__podlist--pods");
 
 let i = 0;
 
@@ -10,7 +10,7 @@ export async function createHtml() {
     i++;
 
     const innerArticle = document.createElement("article");
-    innerArticle.setAttribute("class", "section__article-innerarticle");
+    innerArticle.setAttribute("class", "section__article--innerarticle");
     innerArticle.setAttribute("tabindex", "1");
     podCastContainer.appendChild(innerArticle);
 
@@ -23,7 +23,7 @@ export async function createHtml() {
     innerArticle.appendChild(imgPlacement);
 
     const textDiv = document.createElement("div");
-    textDiv.setAttribute("class", "section__article-div");
+    textDiv.setAttribute("class", "section__article--div");
     innerArticle.appendChild(textDiv);
 
     const headerPlacement = document.createElement("h2");
