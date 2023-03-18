@@ -7,7 +7,7 @@ const podCastContainer: HTMLDivElement = document.getElementById(
 
 let i: number = 0;
 
-export async function createHtml1() {
+export async function createHtml() {
   const podCasts: IPodcast[] = await getPodcasts();
 
   podCasts.forEach((podcast: IPodcast) => {
