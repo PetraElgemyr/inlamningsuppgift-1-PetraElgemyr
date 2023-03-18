@@ -18,10 +18,8 @@ export async function createHtml1() {
     if (podCastContainer) podCastContainer.appendChild(innerPodDiv);
 
     const imgPlacement: HTMLImageElement = document.createElement("img");
-    imgPlacement.setAttribute("src", podCasts[i].socialimage);
-    // imgPlacement.setAttribute("width", "100");
-    // imgPlacement.setAttribute("height", "100");
-    imgPlacement.alt = podCasts[i].name;
+    imgPlacement.setAttribute("src", podcast.socialimage);
+    imgPlacement.alt = podcast.name;
     innerPodDiv.appendChild(imgPlacement);
 
     const textDiv: HTMLDivElement = document.createElement("div");
@@ -29,18 +27,18 @@ export async function createHtml1() {
     innerPodDiv.appendChild(textDiv);
 
     const headerPlacement: HTMLHeadingElement = document.createElement("h2");
-    const programName: Text = document.createTextNode(podCasts[i].name);
+    const programName: Text = document.createTextNode(podcast.name);
     headerPlacement.appendChild(programName);
     textDiv.appendChild(headerPlacement);
 
     const descPlacement: HTMLParagraphElement = document.createElement("p");
-    const desc: Text = document.createTextNode(podCasts[i].description);
+    const desc: Text = document.createTextNode(podcast.description);
     descPlacement.appendChild(desc);
     textDiv.appendChild(descPlacement);
 
     const linkPlacement: HTMLAnchorElement = document.createElement("a");
     const linkText: Text = document.createTextNode("Lyssna här");
-    linkPlacement.setAttribute("href", podCasts[i].programurl);
+    linkPlacement.setAttribute("href", podcast.programurl);
     linkPlacement.className = "pod__link";
     linkPlacement.appendChild(linkText);
     textDiv.appendChild(linkPlacement);
