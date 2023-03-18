@@ -6,7 +6,9 @@ const toggleDarkModeButton: HTMLButtonElement = document.getElementById(
 ) as HTMLButtonElement;
 
 function init() {
-  toggleDarkModeButton.addEventListener("click", toggleDarkMode);
+  toggleDarkModeButton.addEventListener("click", () => {
+    toggleDarkMode(toggleDarkModeButton);
+  });
   createHtml1();
 }
 
