@@ -15,12 +15,17 @@ import { ISrResponse } from "../models/ISrResponse";
 // }
 
 export function getPodcasts(): Promise<IPodcast[]> {
-  return axios
-    .get<ISrResponse>(
-      "https://api.sr.se/api/v2/programs/index?programcategoryid=133&format=json&pagination=false&indent=true&filter=program.archived&filterValue=false"
-    )
-    .then((response) => {
-      console.log(response.data.programs);
-      return response.data.programs;
-    });
+  try {
+    return axios
+      .get<ISrResponse>(
+        "https://api.sr.se/api/v2/programs/index?programcategoryid=133&format=json&pagination=false&indent=true&filter=program.archived&filterValue=false"
+      )
+      .then((response) => {
+        console.log(response.data.programs);
+        return response.data.programs;
+      });
+  } catch (error) {
+    console.error(error);
+    throw new Error("Failed to fetch podcasts");
+  }
 }
