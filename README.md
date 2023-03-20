@@ -7,11 +7,11 @@ G
 - [ ] Enhetlig namngivning i CSS:en
 - [x] Konvertera till TypeScript
 - [ ] Enhetlig kodkvalitet
-- [ ] Mobilvyn
-- [ ] Språk
+- [x] Mobilvyn
+- [x] Språk
 - [x] Rensa loggning
 - [ ] Dokumentation
-- [ ] Tillgänglighet (bilder)
+- [x] Tillgänglighet (bilder)
 - [ ] Refaktorera funktioner
 - [ ] Eliminera onödig kod
 - [ ] Rensa bort kod som inte ska sättas
