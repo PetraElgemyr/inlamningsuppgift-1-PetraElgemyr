@@ -5,7 +5,7 @@ const podCastContainer: HTMLDivElement = document.getElementById(
   "podcast__wrapper"
 ) as HTMLDivElement;
 
-let i: number = 0;
+let i = 0;
 
 export async function createHtml() {
   const podCasts: IPodcast[] = await getPodcasts();
