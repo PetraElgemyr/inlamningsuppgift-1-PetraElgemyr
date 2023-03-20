@@ -12,7 +12,7 @@ G
 - [x] Rensa loggning
 - [ ] Dokumentation
 - [x] Tillgänglighet (bilder)
-- [ ] Refaktorera funktioner
+- [x?] Refaktorera funktioner
 - [ ] Eliminera onödig kod
 - [ ] Rensa bort kod som inte ska sättas
 
@@ -28,3 +28,7 @@ VG
 - [ ] Läs av utvecklingsmiljön
 - [ ] Enhetlig syntax i CSS:en
 - [ ] Publicera sidan på GitHub pages
+
+## Description
+
+Add your own .env file to add the api link. See .env.example

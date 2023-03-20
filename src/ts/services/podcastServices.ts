@@ -1,29 +1,18 @@
 import axios from "axios";
 import { IPodcast } from "../models/IPodcast";
 import { ISrResponse } from "../models/ISrResponse";
-
-// export async function getPodcasts() {
-//   return await fetch(
-//     "https://api.sr.se/api/v2/programs/index?programcategoryid=133&format=json&pagination=false&indent=true&filter=program.archived&filterValue=false"
-//   )
-//     .then((data) => data.json())
-//     .then((json) => json)
-//     .catch((error) => {
-//       console.error("nått blev fel:", error);
-//       return null;
-//     });
-// }
+import * as dotenv from "dotenv";
+dotenv.config();
 
 export function getPodcasts(): Promise<IPodcast[]> {
+  const apiLink = process.env.API_LINK || "";
+  console.log(apiLink);
+
   try {
-    return axios
-      .get<ISrResponse>(
-        "https://api.sr.se/api/v2/programs/index?programcategoryid=133&format=json&pagination=false&indent=true&filter=program.archived&filterValue=false"
-      )
-      .then((response) => {
-        console.log(response.data.programs);
-        return response.data.programs;
-      });
+    return axios.get<ISrResponse>(apiLink).then((response) => {
+      console.log(response.data.programs);
+      return response.data.programs;
+    });
   } catch (error) {
     console.error(error);
     throw new Error("Failed to fetch podcasts");
