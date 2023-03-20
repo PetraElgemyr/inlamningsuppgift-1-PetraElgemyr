@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,12 +11,12 @@
   </head>
   <body>
     <section class="section__podlist">
-      <button class="section__podlist--button toggle-btn">
+      <button class="section__podlist--button toggle-btn" id="toggleColorBtn">
         Välj mörkt läge
       </button>
       <h1>SRs Humorprogram</h1>
-      <article class="section__podlist--pods"></article>
+      <div class="section__podlist--pods" id="podcast__wrapper"></div>
     </section>
-    <script type="module" defer src="./js/main.js" type="module"></script>
+    <script type="module" defer src="./src/ts/main.ts" type="module"></script>
   </body>
 </html>

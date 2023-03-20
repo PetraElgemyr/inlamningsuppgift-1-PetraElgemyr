@@ -3,15 +3,15 @@
 G
 
 - [x] Få projektet att funka
-- [ ] CSS till Sass
+- [x] CSS till Sass
 - [ ] Enhetlig namngivning i CSS:en
-- [ ] Konvertera till TypeScript
+- [x] Konvertera till TypeScript
 - [ ] Enhetlig kodkvalitet
-- [ ] Mobilvyn
-- [ ] Språk
+- [x] Mobilvyn
+- [x] Språk
 - [x] Rensa loggning
 - [ ] Dokumentation
-- [ ] Tillgänglighet (bilder)
+- [x] Tillgänglighet (bilder)
 - [ ] Refaktorera funktioner
 - [ ] Eliminera onödig kod
 - [ ] Rensa bort kod som inte ska sättas

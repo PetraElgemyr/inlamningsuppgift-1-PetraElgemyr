@@ -20,7 +20,7 @@ body {
       text-align: center;
     }
 
-    article.section__podlist--pods {
+    div.section__podlist--pods {
       @include m.laptop {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -30,16 +30,18 @@ body {
         grid-template-columns: 1fr 1fr 1fr;
       }
 
-      .section__article--innerarticle {
+      .section__podDiv--container {
         display: flex;
         flex-direction: row;
         margin-bottom: 2rem;
 
         img {
           margin-top: 0.5rem;
+          width: 100px;
+          height: 100px;
         }
 
-        .section__article--div {
+        .section__podDiv--innerDiv {
           display: inline-flex;
           flex-direction: column;
           margin-top: 0;
@@ -75,8 +77,8 @@ body {
   color: v.$darkmode-text-color;
   section
     > .section__podlist--pods
-    > .section__article--innerarticle
-    > .section__article--div
+    > .section__podDiv--container
+    > .section__podDiv--innerDiv
     > a.pod__link {
     color: v.$darkmode-text-color;
     &:active,
