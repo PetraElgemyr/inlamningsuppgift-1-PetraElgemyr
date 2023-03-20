@@ -13,7 +13,7 @@ G
 - [ ] Dokumentation
 - [x] Tillgänglighet (bilder)
 - [x?] Refaktorera funktioner
-- [ ] Eliminera onödig kod
+- [x?] Eliminera onödig kod
 - [ ] Rensa bort kod som inte ska sättas
 
 VG
