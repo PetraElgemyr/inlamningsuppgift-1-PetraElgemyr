@@ -7,7 +7,7 @@ body {
   color: v.$darkmode-bg-color;
   background-color: v.$lightmode-bg-color;
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -24,7 +24,7 @@ body {
         grid-template-columns: 1fr 1fr;
       }
 
-      @include m.laptop-L {
+      @include m.laptop-large {
         grid-template-columns: 1fr 1fr 1fr;
       }
 

@@ -6,8 +6,8 @@
   }
 }
 
-@mixin laptop-L {
-  @media screen and (min-width: v.$laptop-L) {
+@mixin laptop-large {
+  @media screen and (min-width: v.$laptop-large) {
     @content;
   }
 }
