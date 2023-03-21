@@ -1,6 +1,6 @@
-import { createHtml } from "./createHtml";
 import "./../scss/main.scss";
 import { toggleDarkMode } from "./toggleDarkMode";
+import { createHtml } from "./createHtml";
 const toggleDarkModeButton: HTMLButtonElement = document.getElementById(
   "toggleColorBtn"
 ) as HTMLButtonElement;
