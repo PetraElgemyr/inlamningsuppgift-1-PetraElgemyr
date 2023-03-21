@@ -5,14 +5,10 @@ const podCastContainer: HTMLDivElement = document.getElementById(
   "podcast__wrapper"
 ) as HTMLDivElement;
 
-let i = 0;
-
 export async function createHtml() {
   const podCasts: IPodcast[] = await getPodcasts();
 
   podCasts.forEach((podcast: IPodcast) => {
-    i++;
-
     const innerPodDiv: HTMLDivElement = document.createElement("div");
     innerPodDiv.setAttribute("class", "section__podDiv--container");
     if (podCastContainer) podCastContainer.appendChild(innerPodDiv);
