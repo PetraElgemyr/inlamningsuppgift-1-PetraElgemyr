@@ -12,8 +12,8 @@ G
 - [x] Rensa loggning
 - [ ] Dokumentation
 - [x] Tillgänglighet (bilder)
-- [ ] Refaktorera funktioner
-- [ ] Eliminera onödig kod
+- [x?] Refaktorera funktioner
+- [x?] Eliminera onödig kod
 - [ ] Rensa bort kod som inte ska sättas
 
 VG
@@ -23,8 +23,12 @@ VG
 - [ ] Gör en tillgänglighetsgranskning av sidan
 - [ ] Utnyttja features i Sass i CSS:en
 - [ ] Rensa bort paket som inte används
-- [ ] Hantera fel i API-anropet
+- [x?] Hantera fel i API-anropet
 - [ ] Gör en Lighthouse-analys
 - [ ] Läs av utvecklingsmiljön
 - [ ] Enhetlig syntax i CSS:en
 - [ ] Publicera sidan på GitHub pages
+
+## Description
+
+Add your own .env file to add the api link. See .env.example
