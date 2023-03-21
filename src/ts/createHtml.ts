@@ -10,7 +10,7 @@ export async function createHtml() {
 
   podCasts.forEach((podcast: IPodcast) => {
     const innerPodDiv: HTMLDivElement = document.createElement("div");
-    innerPodDiv.setAttribute("class", "section__podDiv--container");
+    innerPodDiv.setAttribute("class", "podlist__podcast");
     if (podCastContainer) podCastContainer.appendChild(innerPodDiv);
 
     createImg(podcast, innerPodDiv);
@@ -30,7 +30,7 @@ function createImg(podcast: IPodcast, innerPodDiv: HTMLDivElement) {
 
 function createTextDiv(innerPodDiv: HTMLDivElement) {
   const textDiv: HTMLDivElement = document.createElement("div");
-  textDiv.setAttribute("class", "section__podDiv--innerDiv");
+  textDiv.setAttribute("class", "podlist__podcast--textbox");
   innerPodDiv.appendChild(textDiv);
   return textDiv;
 }
