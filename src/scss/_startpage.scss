@@ -3,34 +3,32 @@
 
 body {
   line-height: 1.5;
-
   color-scheme: light dark;
   color: v.$darkmode-bg-color;
   background-color: v.$lightmode-bg-color;
-
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  section.section__podlist {
+  section.root {
     h1 {
       font-size: 2.5rem;
       text-align: center;
     }
 
-    div.section__podlist--pods {
+    div.podlist {
       @include m.laptop {
         display: grid;
         grid-template-columns: 1fr 1fr;
       }
 
-      @include m.laptopL {
+      @include m.laptop-large {
         grid-template-columns: 1fr 1fr 1fr;
       }
 
-      .section__podDiv--container {
+      .podlist__podcast {
         display: flex;
         flex-direction: row;
         margin-bottom: 2rem;
@@ -41,7 +39,7 @@ body {
           height: 100px;
         }
 
-        .section__podDiv--innerDiv {
+        .podlist__podcast--textbox {
           display: inline-flex;
           flex-direction: column;
           margin-top: 0;
@@ -75,12 +73,14 @@ body {
 .darkmode {
   background-color: v.$darkmode-bg-color;
   color: v.$darkmode-text-color;
-  section
-    > .section__podlist--pods
-    > .section__podDiv--container
-    > .section__podDiv--innerDiv
+
+  .root
+    > .podlist
+    > .podlist__podcast
+    > .podlist__podcast--textbox
     > a.pod__link {
     color: v.$darkmode-text-color;
+
     &:active,
     &:hover {
       color: v.$hover-link-text-color;

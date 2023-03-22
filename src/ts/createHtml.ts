@@ -6,54 +6,74 @@ const podCastContainer: HTMLDivElement = document.getElementById(
 ) as HTMLDivElement;
 
 export async function createHtml() {
-  const podCasts: IPodcast[] = await getPodcasts();
+  const podcasts: IPodcast[] = await getPodcasts();
 
-  podCasts.forEach((podcast: IPodcast) => {
-    const innerPodDiv: HTMLDivElement = document.createElement("div");
-    innerPodDiv.setAttribute("class", "section__podDiv--container");
-    if (podCastContainer) podCastContainer.appendChild(innerPodDiv);
+  // if (podcasts.length < 1) {
+  //   showErrorMessage();
+  // }
 
-    createImg(podcast, innerPodDiv);
-    const textDiv: HTMLDivElement = createTextDiv(innerPodDiv);
-    createHeader(podcast, textDiv);
-    createParagraph(podcast, textDiv);
-    createLink(podcast, textDiv);
-  });
+  if (podcasts.length > 0) {
+    podcasts.forEach((podcast: IPodcast) => {
+      const podcastDiv: HTMLDivElement = createPodcastDiv();
+      createImg(podcast, podcastDiv);
+      const podcastTextBox: HTMLDivElement = createTextDiv(podcastDiv);
+      createHeader(podcast, podcastTextBox);
+      createParagraph(podcast, podcastTextBox);
+      createLink(podcast, podcastTextBox);
+    });
+  }
 }
 
-function createImg(podcast: IPodcast, innerPodDiv: HTMLDivElement) {
-  const imgPlacement: HTMLImageElement = document.createElement("img");
-  imgPlacement.setAttribute("src", podcast.socialimage);
-  imgPlacement.alt = podcast.name;
-  innerPodDiv.appendChild(imgPlacement);
+function createPodcastDiv() {
+  const podcastDiv: HTMLDivElement = document.createElement("div");
+  podcastDiv.setAttribute("class", "podlist__podcast");
+  if (podCastContainer) podCastContainer.appendChild(podcastDiv);
+  return podcastDiv;
 }
 
-function createTextDiv(innerPodDiv: HTMLDivElement) {
-  const textDiv: HTMLDivElement = document.createElement("div");
-  textDiv.setAttribute("class", "section__podDiv--innerDiv");
-  innerPodDiv.appendChild(textDiv);
-  return textDiv;
+function createImg(podcast: IPodcast, podcastDiv: HTMLDivElement) {
+  const podImg: HTMLImageElement = document.createElement("img");
+  podImg.setAttribute("src", podcast.socialimage);
+  podImg.alt = podcast.name;
+  podcastDiv.appendChild(podImg);
 }
 
-function createHeader(podcast: IPodcast, textDiv: HTMLDivElement) {
-  const headerPlacement: HTMLHeadingElement = document.createElement("h2");
+function createTextDiv(podcastDiv: HTMLDivElement) {
+  const podcastTextBox: HTMLDivElement = document.createElement("div");
+  podcastTextBox.setAttribute("class", "podlist__podcast--textbox");
+  podcastDiv.appendChild(podcastTextBox);
+  return podcastTextBox;
+}
+
+function createHeader(podcast: IPodcast, podcastTextBox: HTMLDivElement) {
+  const podcastHeader: HTMLHeadingElement = document.createElement("h2");
   const programName: Text = document.createTextNode(podcast.name);
-  headerPlacement.appendChild(programName);
-  textDiv.appendChild(headerPlacement);
+  podcastHeader.appendChild(programName);
+  podcastTextBox.appendChild(podcastHeader);
 }
 
-function createParagraph(podcast: IPodcast, textDiv: HTMLDivElement) {
-  const descPlacement: HTMLParagraphElement = document.createElement("p");
-  const desc: Text = document.createTextNode(podcast.description);
-  descPlacement.appendChild(desc);
-  textDiv.appendChild(descPlacement);
+function createParagraph(podcast: IPodcast, podcastTextBox: HTMLDivElement) {
+  const podcastDescription: HTMLParagraphElement = document.createElement("p");
+  const description: Text = document.createTextNode(podcast.description);
+  podcastDescription.appendChild(description);
+  podcastTextBox.appendChild(podcastDescription);
 }
 
-function createLink(podcast: IPodcast, textDiv: HTMLDivElement) {
-  const linkPlacement: HTMLAnchorElement = document.createElement("a");
+function createLink(podcast: IPodcast, podcastTextBox: HTMLDivElement) {
+  const podLink: HTMLAnchorElement = document.createElement("a");
   const linkText: Text = document.createTextNode("Lyssna här");
-  linkPlacement.setAttribute("href", podcast.programurl);
-  linkPlacement.className = "pod__link";
-  linkPlacement.appendChild(linkText);
-  textDiv.appendChild(linkPlacement);
+  podLink.setAttribute("href", podcast.programurl);
+  podLink.className = "pod__link";
+  podLink.appendChild(linkText);
+  podcastTextBox.appendChild(podLink);
 }
+
+// export function showErrorMessage() {
+//   // const errorName: HTMLParagraphElement = document.createElement("p");
+//   const errorMessage: HTMLParagraphElement = document.createElement("p");
+//   // errorName.innerHTML = name;
+//   errorMessage.innerHTML = "Tyvärr gick något fel i hämtningen av data! :(";
+//   const bigBox: HTMLElement = document.getElementById("root") as HTMLElement;
+
+//   bigBox.append(errorMessage);
+// }
