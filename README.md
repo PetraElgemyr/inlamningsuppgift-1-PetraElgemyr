@@ -6,7 +6,7 @@ This is my first assignment in the course "Working methodology for developers". 
 
 ![Light mode](./src/assets/lightmode.jpg)
 
-![Dark mode](./src/assets/lightmode.jpg)
+![Dark mode](./src/assets/darkmode.jpg)
 
 ### How does the code work?
 
