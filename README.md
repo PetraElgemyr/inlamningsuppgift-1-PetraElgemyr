@@ -4,6 +4,10 @@
 
 This is my first assignment in the course "Working methodology for developers". The goal with this project is to learn how to convert a badly written and structured code into a good code with certain standards. We were given css and javascript files and a project that didn't work properly. Down below you can see different todos that needed to be fixed. We were to convert the css to scss, javascript to typescript and restructure, remove and rewrite the code if needed to achieve best practice standards.
 
+![Light mode](./src/assets/lightmode.jpg)
+
+![Dark mode](./src/assets/lightmode.jpg)
+
 ### How does the code work?
 
 This code is fetching podcasts from Sr (Sveriges radio) and create html to show the user what was fetched with an image, title, description and a link to be able to listen to the podcast audio. The user should also be able to switch between light and dark color mode.
