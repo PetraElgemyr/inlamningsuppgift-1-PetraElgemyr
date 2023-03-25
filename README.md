@@ -32,8 +32,8 @@ npm i
 
 I use:
 
-[![Parcel](https://img.shields.io/badge/PARCEL-docs-pink)](https://parceljs.org/getting-started/webapp/)
-[![Dotenv](https://img.shields.io/badge/dotenv-npmjsDocs-blue)](https://www.npmjs.com/package/dotenv)
+[![Parcel](https://img.shields.io/badge/docs-parcel-pink)](https://parceljs.org/getting-started/webapp/)
+[![Dotenv](https://img.shields.io/badge/npmjsDocs-dotenv-blue)](https://www.npmjs.com/package/dotenv)
 
 - Axios
 - ESLint
