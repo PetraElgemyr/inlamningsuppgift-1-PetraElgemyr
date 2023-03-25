@@ -1,8 +1,10 @@
-export function toggleDarkMode(btn: HTMLButtonElement) {
+import { toggleDarkModeButton } from "./toggleButton";
+
+export function toggleDarkMode() {
   document.body.classList.toggle("darkmode");
   if (document.body.classList.contains("darkmode")) {
-    btn.innerHTML = "Välj ljust läge";
+    toggleDarkModeButton.innerHTML = "Välj ljust läge";
   } else {
-    btn.innerHTML = "Vält mörkt läge";
+    toggleDarkModeButton.innerHTML = "Vält mörkt läge";
   }
 }
