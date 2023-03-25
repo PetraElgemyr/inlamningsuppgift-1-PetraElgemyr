@@ -21,7 +21,8 @@ This code is fetching podcasts from Sr (Sveriges radio) and create html to show 
 ### Start-up
 
 - Add your own .env-file
-- Create a variable with name "API_LINK" in .env-file (For example, see .env.example)
+- Create a variable with name "API_LINK" in the .env-file (For example, see .env.example)
+- Run parcel with command "npm run parcel". See the other scripts I have added in the package.json file.
 
 ### Programs and installations
 
@@ -42,13 +43,13 @@ G
 
 - [x] Få projektet att funka
 - [x] CSS till Sass
-- [x] ?Enhetlig namngivning i CSS:en
+- [x] Enhetlig namngivning i CSS:en
 - [x] Konvertera till TypeScript
 - [x] Enhetlig kodkvalitet
 - [x] Mobilvyn
 - [x] Språk
 - [x] Rensa loggning
-- [x] ?Dokumentation
+- [x] Dokumentation
 - [x] Tillgänglighet (bilder)
 - [x] Refaktorera funktioner
 - [x] ?Eliminera onödig kod
@@ -64,5 +65,5 @@ VG
 - [ ] Hantera fel i API-anropet
 - [ ] Gör en Lighthouse-analys
 - [ ] Läs av utvecklingsmiljön
-- [x] ?Enhetlig syntax i CSS:en
+- [x] Enhetlig syntax i CSS:en
 - [ ] Publicera sidan på GitHub pages
