@@ -22,24 +22,41 @@ This code is fetching podcasts from Sr (Sveriges radio) and create html to show 
 - createParagraph() - creates a paragraph for the description.
 - createLink() - creates an anchor element and sets the source attribute with the right link.
 
-### Start-up
-
-- Add your own .env-file
-- Create a variable with name "API_LINK" in the .env-file (For example, see .env.example)
-- Run parcel with command "npm run parcel". See the other scripts I have added in the package.json file.
-
 ### Programs and installations
 
 Note! Don't forget to run "npm i" to install all packages that is needed.
+
+```bash
+npm i
+```
+
 I use:
 
 - Axios
 - ESLint
 - dotenv
-- Parcel
+  [![Parcel](https://img.shields.io/badge/parcel-blue.svg)](https://parceljs.org/getting-started/webapp/)
 - Typescript
 - @types/node
 - Stylelint for scss
+
+### Start-up
+
+Before you run this project:
+
+- Add your own .env-file
+- Create a variable with name "API_LINK" in the .env-file (For example, see .env.example)
+- Run parcel with command "npm run parcel". See the other scripts I have added in the package.json file.
+
+.env
+
+```bash
+API_LINK = "something.se/.../..."
+```
+
+```bash
+npm run parcel
+```
 
 ## Todos
 
