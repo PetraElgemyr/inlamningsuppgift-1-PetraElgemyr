@@ -32,12 +32,13 @@ npm i
 
 I use:
 
+[![Parcel](https://img.shields.io/badge/PARCEL-docs-pink)](https://parceljs.org/getting-started/webapp/)
+[![Dotenv](https://img.shields.io/badge/dotenv-npmjsDocs-blue)](https://www.npmjs.com/package/dotenv)
+
 - Axios
 - ESLint
 - dotenv
-  [![Parcel](https://img.shields.io/badge/parcel-blue.svg)](https://parceljs.org/getting-started/webapp/)
 - Typescript
-- @types/node
 - Stylelint for scss
 
 ### Start-up
