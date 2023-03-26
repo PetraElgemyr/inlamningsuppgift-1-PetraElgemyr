@@ -5,25 +5,6 @@ const podCastContainer: HTMLDivElement = document.getElementById(
   "podcast__wrapper"
 ) as HTMLDivElement;
 
-export async function createHtml() {
-  const podcasts: IPodcast[] = await getPodcasts();
-
-  // if (podcasts.length < 1) {
-  //   showErrorMessage();
-  // }
-
-  if (podcasts.length > 0) {
-    podcasts.forEach((podcast: IPodcast) => {
-      const podcastDiv: HTMLDivElement = createPodcastDiv();
-      createImg(podcast, podcastDiv);
-      const podcastTextBox: HTMLDivElement = createTextDiv(podcastDiv);
-      createHeader(podcast, podcastTextBox);
-      createParagraph(podcast, podcastTextBox);
-      createLink(podcast, podcastTextBox);
-    });
-  }
-}
-
 function createPodcastDiv() {
   const podcastDiv: HTMLDivElement = document.createElement("div");
   podcastDiv.setAttribute("class", "podlist__podcast");
@@ -68,12 +49,17 @@ function createLink(podcast: IPodcast, podcastTextBox: HTMLDivElement) {
   podcastTextBox.appendChild(podLink);
 }
 
-// export function showErrorMessage() {
-//   // const errorName: HTMLParagraphElement = document.createElement("p");
-//   const errorMessage: HTMLParagraphElement = document.createElement("p");
-//   // errorName.innerHTML = name;
-//   errorMessage.innerHTML = "Tyvärr gick något fel i hämtningen av data! :(";
-//   const bigBox: HTMLElement = document.getElementById("root") as HTMLElement;
+export async function createHtml() {
+  const podcasts: IPodcast[] = await getPodcasts();
 
-//   bigBox.append(errorMessage);
-// }
+  if (podcasts.length > 0) {
+    podcasts.forEach((podcast: IPodcast) => {
+      const podcastDiv: HTMLDivElement = createPodcastDiv();
+      createImg(podcast, podcastDiv);
+      const podcastTextBox: HTMLDivElement = createTextDiv(podcastDiv);
+      createHeader(podcast, podcastTextBox);
+      createParagraph(podcast, podcastTextBox);
+      createLink(podcast, podcastTextBox);
+    });
+  }
+}
