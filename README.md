@@ -24,36 +24,40 @@ This code is fetching podcasts from Sr (Sveriges radio) and create html to show 
 
 ### Programs and installations
 
-Note! Don't forget to run "npm i" to install all packages that is needed.
-
-```bash
-npm i
-```
-
-I use:
-
-[![Parcel](https://img.shields.io/badge/docs-parcel-pink)](https://parceljs.org/getting-started/webapp/)
-[![Dotenv](https://img.shields.io/badge/npmjsDocs-dotenv-blue)](https://www.npmjs.com/package/dotenv)
-
-- Axios
-- ESLint
-- dotenv
-- Typescript
-- Stylelint for scss
+[![Parcel](https://img.shields.io/badge/tech-parcel-yellow)](https://parceljs.org/getting-started/webapp/)
+[![Typescript](https://img.shields.io/badge/tech-typescript-blue)](https://www.typescriptlang.org/docs/)
+[![scss](https://img.shields.io/badge/tech-scss-pink)](https://www.typescriptlang.org/docs/)
+[![Axios](https://img.shields.io/badge/tech-axios-yellowgreen)](https://www.typescriptlang.org/docs/)
 
 ### Start-up
+
+Clone the project.
+
+```bash
+git clone
+```
 
 Before you run this project:
 
 - Add your own .env-file
 - Create a variable with name "API_LINK" in the .env-file (For example, see .env.example)
-- Run parcel with command "npm run parcel". See the other scripts I have added in the package.json file.
-
-.env
+  .env
 
 ```bash
 API_LINK = "something.se/.../..."
 ```
+
+```bash
+npm run parcel
+```
+
+- Note! Don't forget to run "npm i" to install all packages/installations that is needed.
+
+```bash
+npm i
+```
+
+- Run parcel with command "npm run parcel". See the other scripts I have added in the package.json file.
 
 ```bash
 npm run parcel
