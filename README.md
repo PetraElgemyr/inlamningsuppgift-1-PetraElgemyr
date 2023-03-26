@@ -26,8 +26,8 @@ This code is fetching podcasts from Sr (Sveriges radio) and create html to show 
 
 [![Parcel](https://img.shields.io/badge/tech-parcel-yellow)](https://parceljs.org/getting-started/webapp/)
 [![Typescript](https://img.shields.io/badge/tech-typescript-blue)](https://www.typescriptlang.org/docs/)
-[![scss](https://img.shields.io/badge/tech-scss-pink)](https://www.typescriptlang.org/docs/)
-[![Axios](https://img.shields.io/badge/tech-axios-yellowgreen)](https://www.typescriptlang.org/docs/)
+[![scss](https://img.shields.io/badge/tech-scss-pink)](https://sass-lang.com/guide)
+[![Axios](https://img.shields.io/badge/tech-axios-yellowgreen)](https://axios-http.com/docs/intro)
 
 ### Start-up
 
